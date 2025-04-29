@@ -26,4 +26,11 @@ module.exports = {
   output: 'standalone',
   poweredByHeader: false,
   reactStrictMode: true,
+  experimental: {
+    optimizeCss: true,
+    optimizePackageImports: ['@netlify/plugin-nextjs', 'next', 'react', 'react-dom']
+  },
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production',
+  },
 }
