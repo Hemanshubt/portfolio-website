@@ -2,11 +2,12 @@
 // @flow strict
 import { isValidEmail } from "@/utils/check-email";
 import axios from "axios";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { TbMailForward } from "react-icons/tb";
 import { toast } from "react-toastify";
 
 function ContactForm() {
+  const [mounted, setMounted] = useState(false);
   const [error, setError] = useState({ email: false, required: false });
   const [isLoading, setIsLoading] = useState(false);
   const [userInput, setUserInput] = useState({
@@ -14,6 +15,10 @@ function ContactForm() {
     email: "",
     message: "",
   });
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const checkRequired = () => {
     if (userInput.email && userInput.message && userInput.name) {
@@ -52,6 +57,10 @@ function ContactForm() {
       setIsLoading(false);
     };
   };
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <div>
