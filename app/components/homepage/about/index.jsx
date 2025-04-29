@@ -3,7 +3,6 @@
 import { personalData } from "@/utils/data/personal-data";
 import Image from "next/image";
 
-
 function AboutSection() {
   return (
     <div id="about" className="my-12 lg:my-16 relative">
@@ -18,7 +17,7 @@ function AboutSection() {
           <p className="font-medium mb-5 text-[#16f2b3] text-xl uppercase">
             Who I am?
           </p>
-          <p className="text-gray-200 text-sm lg:text-lg">
+          <p className="text-gray-200 text-sm lg:text-lg text-justify">
             {personalData.description}
           </p>
         </div>
@@ -34,6 +33,6 @@ function AboutSection() {
       </div>
     </div>
   );
-};
+}
 
 export default AboutSection;

@@ -4,10 +4,14 @@ import { useEffect } from 'react';
 
 const GlowCard = ({ children, identifier = '' }) => {
   useEffect(() => {
-    if (typeof window === 'undefined') return;
+    // Ensure we're in the browser environment
+    if (typeof window === 'undefined' || typeof document === 'undefined') return;
 
     const CONTAINER = document.querySelector(`.glow-container-${identifier}`);
     const CARDS = document.querySelectorAll(`.glow-card-${identifier}`);
+
+    // Only proceed if elements are found
+    if (!CONTAINER || !CARDS.length) return;
 
     const UPDATE = (event) => {
       const rect = CONTAINER.getBoundingClientRect();

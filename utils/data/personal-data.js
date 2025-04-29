@@ -2,7 +2,7 @@ export const personalData = {
   name: "PRADYUMNA MARATHE",
   profile: '/profile.jpeg',
   designation: "Machine Learning Engineer",
-  description: "My name is ABU SAID. I am a professional and enthusiastic programmer in my daily life. I am a quick learner with a self-learning attitude. I love to learn and explore new technologies and am passionate about problem-solving. I love almost all the stacks of web application development and love to make the web more open to the world. My core skill is based on JavaScript and I love to do most of the things using JavaScript. I am available for any kind of job opportunity that suits my skills and interests.",
+  description: "I am a passionate Machine Learning Engineer with a strong focus on deep learning, natural language processing (NLP), and real-world AI applications. I specialize in building and deploying scalable AI solutions using cutting-edge tools such as TensorFlow, PyTorch, Hugging Face, Flask, and Docker. With a proven track record of leading cross-functional teams, I thrive in environments where innovation and practical implementation intersect. I am driven by the goal of advancing both machine learning research and its deployment in impactful, production-ready systems.",
   email: 'marathepradyumna744@gmail.com',
   phone: '+91 8329046229 ',
   address: 'Shirpur, Maharashtra - 425405',
