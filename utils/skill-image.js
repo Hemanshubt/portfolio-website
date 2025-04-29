@@ -84,7 +84,7 @@ import javascript from '../app/assets/svg/skills/javascript.svg';
 import pytorch from '../app/assets/svg/skills/pytorch.svg';
 import tensorflow from '../app/assets/svg/skills/tensorflow.svg';
 import tesseract from '../app/assets/svg/skills/tesseract.svg';
-import flask from '../app/assets/svg/skills/flask.svg'
+import flask from '../app/assets/svg/skills/Flask.svg'
 import cuda from '../app/assets/svg/skills/cuda.svg'
 import jupyter from '../app/assets/svg/skills/jupyter.svg'
 import numpy from '../app/assets/svg/skills/numpy.svg';
