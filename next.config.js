@@ -27,7 +27,6 @@ module.exports = {
   poweredByHeader: false,
   reactStrictMode: true,
   experimental: {
-    optimizeCss: true,
     optimizePackageImports: ['@netlify/plugin-nextjs', 'next', 'react', 'react-dom']
   },
   compiler: {
